@@ -3,10 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var peras int8 = 4
-	var manzanas int8 = 9
-
-	frutas := peras + manzanas
-
-	fmt.Printf("Tengo %v frutas\n", frutas)
+	var edad uint8
+	edad = 28
+	fmt.Println(edad)
 }
