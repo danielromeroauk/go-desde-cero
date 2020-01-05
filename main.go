@@ -9,4 +9,6 @@ func main() {
 	fmt.Println(frutas)
 	delete(frutas, "mango")
 	fmt.Println(frutas)
+	delete(frutas, "pera")
+	fmt.Println(frutas)
 }
