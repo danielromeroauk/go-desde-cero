@@ -3,15 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	// edades := make([]uint8, 0, 5)
-	// edades = append(edades, 28)
-
-	// var edades []uint8
-	// edades = append(edades, 28)
-
-	// var edades = []uint8{28, 30}
-
-	edades := []uint8{28, 30}
-
-	fmt.Println(edades)
+	frutas := make(map[string]int)
+	frutas["mango"] = 5
+	frutas["manzana"] = 10
+	fmt.Println(frutas)
 }
