@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-	frutas := []string{"manzana", "pera", "mango"}
+	idiomas := map[string]string{"es": "Español", "en": "Inglés"}
 
-	for _, valor := range frutas {
-		fmt.Println(valor)
+	for llave, valor := range idiomas {
+		fmt.Printf("%s: %s\n", llave, valor)
 	}
 }
