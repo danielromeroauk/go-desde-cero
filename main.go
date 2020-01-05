@@ -4,8 +4,7 @@ import "fmt"
 
 func main() {
 	var (
-		nombre   string
-		apellido string
+		nombre, apellido string
 	)
 	nombre = "Daniel"
 	apellido = "Romero"
