@@ -10,6 +10,6 @@ func main() {
 	fmt.Println(saludo)
 }
 
-func saludar(nombre string, apellido string) string {
+func saludar(nombre, apellido string) string {
 	return fmt.Sprintf("Hola %s %s", nombre, apellido)
 }
