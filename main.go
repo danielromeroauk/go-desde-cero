@@ -5,10 +5,13 @@ import "fmt"
 func main() {
 	var (
 		nombre, apellido string
+		edad             int
 	)
 	nombre = "Daniel"
 	apellido = "Romero"
-	fmt.Printf("nombre es %T y apellido es %T\n", nombre, apellido)
+	edad = 28
+	fmt.Printf("nombre es %T, apellido es %T y edad es %T\n", nombre, apellido, edad)
 	fmt.Printf("nombre=%s\n", nombre)
 	fmt.Printf("apellido=%s\n", apellido)
+	fmt.Printf("edad=%d\n", edad)
 }
