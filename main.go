@@ -6,9 +6,8 @@ func main() {
 	frutas := make(map[string]int, 2)
 	frutas["mango"] = 5
 	frutas["manzana"] = 10
-	fmt.Println(frutas)
-	delete(frutas, "mango")
-	fmt.Println(frutas)
-	delete(frutas, "pera")
-	fmt.Println(frutas)
+
+	for llave, valor := range frutas {
+		fmt.Printf("Llave %s: %d\n", llave, valor)
+	}
 }
