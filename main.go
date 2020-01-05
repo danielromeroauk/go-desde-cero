@@ -2,18 +2,18 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
-	hora := time.Now().Hour()
-
-	switch {
-	case hora < 12:
-		fmt.Println("¡Buenos días!")
-	case hora < 17:
-		fmt.Println("¡Buenas tardes!")
-	default:
-		fmt.Printf("¡Buenas noches!")
+	sumatoria := 0
+	for contador := 1; contador <= 5; contador++ {
+		sumatoria += contador
+		if contador == 3 {
+			// continue
+			break
+		}
+		// fmt.Println(contador)
 	}
+
+	fmt.Println(sumatoria)
 }
