@@ -5,15 +5,23 @@ import (
 )
 
 func main() {
-	sumatoria := 0
-	for contador := 1; contador <= 5; contador++ {
-		sumatoria += contador
-		if contador == 3 {
-			// continue
+	contador := 1
+
+	// while
+	// for contador < 5 {
+	// 	fmt.Println(contador)
+	// 	contador++
+	// }
+
+	// do while
+	for {
+		fmt.Println(contador)
+
+		if contador >= 5 {
 			break
 		}
-		// fmt.Println(contador)
+		contador++
 	}
 
-	fmt.Println(sumatoria)
+	fmt.Println("Fin.")
 }
