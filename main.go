@@ -3,7 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	var edad uint8
-	edad = 28
-	fmt.Println(edad)
+	var edades [3]uint8
+	edades[0] = 18
+	edades[1] = 20
+	edades[2] = 30
+
+	for indice, valor := range edades {
+		fmt.Printf("En el índice %d está el valor %d\n", indice, valor)
+	}
 }
