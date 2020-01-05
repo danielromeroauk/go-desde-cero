@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-	animales := [2]string{"perro", "gato"}
+	frutas := []string{"manzana", "pera", "mango"}
 
-	for _, valor := range animales {
+	for _, valor := range frutas {
 		fmt.Println(valor)
 	}
 }
