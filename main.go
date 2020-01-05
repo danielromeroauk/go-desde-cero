@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	frutas := make([]string, 0, 10)
-	frutas = frutas[0:6]
-	frutas[5] = "mango"
+	edades := make([]uint8, 0, 10)
+	edades = edades[0:6]
+	edades[5] = 28
 
-	fmt.Println(frutas)
+	fmt.Println(edades)
 }
