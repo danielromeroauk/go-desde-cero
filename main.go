@@ -3,5 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("¡Hola gente del futuro!")
+	var nombre string
+	nombre = "Daniel"
+	fmt.Println(nombre)
+	nombre = "Guillermo"
+	fmt.Println(nombre)
 }
