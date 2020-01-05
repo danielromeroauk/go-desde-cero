@@ -1,21 +1,19 @@
 package main
 
-import "fmt"
-
-import "runtime"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	fmt.Print("GO está corriendo en ")
+	hora := time.Now().Hour()
 
-	switch sistemaOperativo := runtime.GOOS; sistemaOperativo {
-	case "darwin":
-		fmt.Println("macOS.")
-
-		// ejecuta el cuerpo del caso siguiente sin evaluarlo
-		fallthrough
-	case "linux":
-		fmt.Println("Linux.")
+	switch {
+	case hora < 12:
+		fmt.Println("¡Buenos días!")
+	case hora < 17:
+		fmt.Println("¡Buenas tardes!")
 	default:
-		fmt.Printf("%s.\n", sistemaOperativo)
+		fmt.Printf("¡Buenas noches!")
 	}
 }
