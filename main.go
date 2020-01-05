@@ -5,11 +5,11 @@ import (
 )
 
 func main() {
-	saludo := saludar("Daniel")
+	saludo := saludar("Daniel", "Romero")
 
 	fmt.Println(saludo)
 }
 
-func saludar(nombre string) string {
-	return fmt.Sprintf("Hola %s", nombre)
+func saludar(nombre string, apellido string) string {
+	return fmt.Sprintf("Hola %s %s", nombre, apellido)
 }
