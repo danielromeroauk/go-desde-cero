@@ -5,9 +5,10 @@ import (
 )
 
 func main() {
-	saludar()
+	saludo := saludar()
+	fmt.Println(saludo)
 }
 
-func saludar() {
-	fmt.Println("Hola gente del futuro")
+func saludar() string {
+	return "Hola desde una función"
 }
