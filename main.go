@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-	idiomas := map[string]string{"es": "Español", "en": "Inglés"}
+	saludar()
+}
 
-	for llave, valor := range idiomas {
-		fmt.Printf("%s: %s\n", llave, valor)
-	}
+func saludar() {
+	fmt.Println("Hola gente del futuro")
 }
