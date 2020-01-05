@@ -5,23 +5,20 @@ import (
 )
 
 func main() {
-	contador := 1
+	nombre := "Daniel"
 
-	// while
-	// for contador < 5 {
-	// 	fmt.Println(contador)
-	// 	contador++
+	// for posicion, valor := range nombre {
+	// 	// fmt.Printf("Posición: %T, Valor: %T\n", posicion, valor)
+	// 	fmt.Printf("Posición: %d, Valor: %s\n", posicion, string(valor))
 	// }
 
-	// do while
-	for {
-		fmt.Println(contador)
+	// for _, valor := range nombre {
+	// 	// fmt.Printf("Posición: %T, Valor: %T\n", posicion, valor)
+	// 	fmt.Printf("Valor: %s\n", string(valor))
+	// }
 
-		if contador >= 5 {
-			break
-		}
-		contador++
+	for _, _ = range nombre {
+		// fmt.Printf("Posición: %T, Valor: %T\n", posicion, valor)
+		fmt.Printf("Hola\n")
 	}
-
-	fmt.Println("Fin.")
 }
