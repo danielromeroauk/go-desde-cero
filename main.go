@@ -7,4 +7,6 @@ func main() {
 	frutas["mango"] = 5
 	frutas["manzana"] = 10
 	fmt.Println(frutas)
+	delete(frutas, "mango")
+	fmt.Println(frutas)
 }
