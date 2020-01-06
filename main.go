@@ -11,9 +11,9 @@ func main() {
 	fmt.Println("mayor:", mayor)
 }
 
-func saludar(nombre, apellido string, edad uint8) (string, bool) {
-	booleano := edad >= 18
-	texto := fmt.Sprintf("Hola %s %s", nombre, apellido)
+func saludar(nombre, apellido string, edad uint8) (texto string, booleano bool) {
+	booleano = edad >= 18
+	texto = fmt.Sprintf("Hola %s %s", nombre, apellido)
 
-	return texto, booleano
+	return
 }
