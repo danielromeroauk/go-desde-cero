@@ -5,10 +5,9 @@ import (
 )
 
 func main() {
-	saludo, mayor := saludar("Daniel", "Romero", 19)
+	saludo, _ := saludar("Daniel", "Romero", 19)
 
 	fmt.Println("saludo:", saludo)
-	fmt.Println("mayor:", mayor)
 }
 
 func saludar(nombre, apellido string, edad uint8) (texto string, booleano bool) {
