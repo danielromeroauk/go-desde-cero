@@ -6,15 +6,13 @@ import (
 )
 
 func main() {
-	fmt.Println("saludo1:", reflect.TypeOf(saludo1))
-	fmt.Println("saludo2:", reflect.TypeOf(saludo2))
+	saludar("María", "Hernan", "Olga")
 }
 
-func saludo1(nombre string, apellido string) string {
-	return fmt.Sprintf("Hola %s", nombre)
-}
+func saludar(nombres ...string) {
+	fmt.Println(reflect.TypeOf(nombres))
 
-func saludo2(nombre, apellido string) (texto string) {
-	texto = fmt.Sprintf("Hola %s", nombre)
-	return
+	for _, nombre := range nombres {
+		fmt.Println("Hola", nombre)
+	}
 }
