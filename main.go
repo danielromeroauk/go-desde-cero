@@ -2,27 +2,25 @@ package main
 
 import (
 	"fmt"
-	"log"
+	"reflect"
 )
 
 func main() {
-	miFuncion := saludar
+	fmt.Println("saludo1:", reflect.TypeOf(saludo1))
+	fmt.Println("saludo2:", reflect.TypeOf(saludo2))
 
-	saludo, _, err := miFuncion("Daniel", "Romero", 19)
-	if err != nil {
-		log.Fatalln(err)
-	}
+	conNombre := saludo1("Daniel")
+	conApellido := saludo2("Guillermo")
 
-	fmt.Println("saludo:", saludo)
+	fmt.Println(conNombre)
+	fmt.Println(conApellido)
 }
 
-func saludar(nombre, apellido string, edad uint8) (texto string, booleano bool, err error) {
-	booleano = edad >= 18
-	texto = fmt.Sprintf("Hola %s %s", nombre, apellido)
+func saludo1(nombre string) string {
+	return fmt.Sprintf("Hola %s", nombre)
+}
 
-	if len(apellido) <= 2 {
-		err = fmt.Errorf("El apellido '%s' no es válido", apellido)
-	}
-
+func saludo2(nombre string) (texto string) {
+	texto = fmt.Sprintf("Hola %s", nombre)
 	return
 }
