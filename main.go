@@ -6,7 +6,9 @@ import (
 )
 
 func main() {
-	saludo, _, err := saludar("Daniel", "R.", 19)
+	miFuncion := saludar
+
+	saludo, _, err := miFuncion("Daniel", "Romero", 19)
 	if err != nil {
 		log.Fatalln(err)
 	}
